@@ -1,0 +1,148 @@
+/* AQUA 3 — cinematic planetary expedition */
+:root{--planet-green:#caff66;--planet-mint:#5dffb8;--planet-ink:#020707}
+html:has(.wetland-portal.active){overflow:hidden}
+.site-header{background:linear-gradient(180deg,#020707e8,#02070700);border-bottom:1px solid #94bdaa22;height:91px;z-index:32}
+.site-header .brand-mark{filter:drop-shadow(0 0 18px #d9ff6740)}
+.site-header .desktop-nav a{transition:color .25s}
+.site-header .desktop-nav a:hover{color:#caff66}
+.planet-journey{height:270svh;min-height:1350px;position:relative;background:#010506;isolation:isolate}
+.planet-sticky{height:100svh;min-height:580px;position:sticky;top:0;overflow:hidden;background:radial-gradient(ellipse at 48% 59%,#071a1a 0%,#020809 41%,#010305 76%);isolation:isolate}
+.planet-sticky::before{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(0deg,#b9eae509 0 1px,transparent 1px 105px),repeating-linear-gradient(90deg,#b9eae507 0 1px,transparent 1px 105px);mask-image:linear-gradient(90deg,transparent,#000b 60%,transparent);pointer-events:none}
+.planet-sticky::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:7;background:radial-gradient(ellipse at center,transparent 35%,#010404a8 100%);opacity:.3}
+.starfield{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.planet-star{position:absolute;width:2px;height:2px;border-radius:100%;background:#e1ffee;box-shadow:0 0 11px #aefff29d;animation:planet-twinkle var(--star-speed,5s) ease-in-out infinite alternate;opacity:var(--star-opacity,.5)}
+.planet-star.far{width:1px;height:1px;box-shadow:0 0 4px #c6fff4}
+@keyframes planet-twinkle{0%{opacity:.12;transform:scale(.7)}100%{opacity:var(--star-opacity,.6);transform:scale(1.3)}}
+.planet-grid{position:absolute;inset:0;background:radial-gradient(circle at 50% 55%,transparent 9%,#01070755 72%);pointer-events:none}
+.planet-eyebrow{position:absolute;top:122px;left:4%;right:4%;z-index:8;font:9px var(--mono);color:#c5dfd2;letter-spacing:.21em;display:flex;align-items:center;gap:13px}
+.planet-signal{color:var(--planet-green);font-size:20px;filter:drop-shadow(0 0 12px #bfff5a66)}
+.planet-record{margin-left:auto;color:#708980}
+.planet-intro{z-index:2;position:absolute;left:4%;right:4%;top:52%;transform:translateY(-50%);pointer-events:none;opacity:var(--intro-opacity,1);transition:filter .2s}
+.intro-kicker,.intro-sub{display:block;font:10px var(--mono);letter-spacing:.28em;color:#aec1b9}
+.planet-intro h1{font-family:var(--display);line-height:.85;letter-spacing:-.105em;font-size:clamp(80px,11.2vw,210px);margin:18px 0;font-weight:800;color:#d8e4d9;opacity:.13;text-transform:uppercase}
+.planet-intro h1 em{font-style:normal;color:#6bdca5;opacity:.8}
+.intro-sub{text-align:right;max-width:100%;color:#91b0a4}
+.planet-ambient-rings{position:absolute;left:50%;top:50%;transform:translate(calc(-50% + var(--planet-shift,0px)), -50%) rotate(-19deg);width:min(90vw,980px);aspect-ratio:1;pointer-events:none;opacity:.7;transition:transform .13s linear}
+.planet-ambient-rings span{position:absolute;inset:4%;border:1px solid #4cbfae19;border-radius:50%;transform:scaleX(.84)}
+.planet-ambient-rings span:nth-child(2){inset:14%;transform:scaleX(1.36) rotate(50deg);border-color:#b9ff9e12}
+.planet-ambient-rings span:nth-child(3){inset:-8%;transform:scaleX(.63) rotate(-13deg);border-style:dashed;border-color:#88a6a02a}
+.planet-stage{--user-zoom:1;position:absolute;z-index:5;left:50%;top:52%;width:min(68vw,735px,80svh);aspect-ratio:1;transform:translate(calc(-50% + var(--planet-shift,0px)),-50%) scale(var(--planet-size-scale,1)) scale(var(--user-zoom,1));transition:transform .12s linear;will-change:transform;filter:drop-shadow(0 0 38px #16594a44)}
+.planet-canvas{width:100%;height:100%;display:block;position:relative;z-index:3;cursor:grab;touch-action:none;outline:none}
+.planet-canvas.is-dragging{cursor:grabbing}
+.planet-canvas:focus-visible{outline:2px solid var(--planet-green);border-radius:50%}
+.planet-halo{position:absolute;inset:8%;border-radius:50%;z-index:0;background:radial-gradient(circle at 38% 39%,#4cffaf1d 0%,#25f2e409 44%,#69fdaf08 58%,transparent 71%);box-shadow:0 0 75px 20px #34faca0d,0 0 140px 46px #34faca09;animation:halo-breathe 8s ease-in-out infinite alternate}
+@keyframes halo-breathe{to{filter:brightness(1.5);transform:scale(1.08)}}
+.planet-orbit{pointer-events:none;z-index:1;position:absolute;inset:4%;border:1px solid #88f5db25;border-radius:50%;transform:rotate(-21deg) scaleY(.76)}
+.planet-orbit:after{content:"";position:absolute;width:6px;height:6px;border-radius:50%;top:14%;left:13%;background:var(--planet-green);box-shadow:0 0 20px var(--planet-green)}
+.planet-orbit.orbit-two{inset:-11%;transform:rotate(33deg) scaleY(.57);border-style:dashed;border-color:#93dfb916;animation:planet-orbit-roll 54s linear infinite}
+@keyframes planet-orbit-roll{to{transform:rotate(393deg) scaleY(.57)}}
+.planet-compass,.planet-equator{position:absolute;pointer-events:none;z-index:4;color:#9bb7aa;font:9px var(--mono);letter-spacing:.14em}
+.planet-compass{left:3%;top:24%;transform:rotate(-90deg)}.planet-equator{right:5%;bottom:22%;transform:rotate(90deg)}
+.planet-markers{position:absolute;inset:0;z-index:6;pointer-events:none}
+.planet-marker{position:absolute;pointer-events:auto;border:0;width:24px;height:24px;padding:0;display:grid;place-items:center;background:transparent;transform:translate(-50%,-50%);opacity:1;transition:opacity .14s;z-index:4}
+.planet-marker.is-behind{pointer-events:none;opacity:0;visibility:hidden}
+.marker-core{width:8px;height:8px;border-radius:50%;background:#e2ff91;box-shadow:0 0 0 3px #062720,0 0 12px 3px #bdff6b,0 0 28px #bdff6b;position:absolute}
+.marker-ring{position:absolute;inset:1px;border:1px solid #c4ff87b5;border-radius:50%;animation:beacon-pulse 2.8s ease-out infinite;box-shadow:inset 0 0 12px #caff5033}
+.marker-ring::after{content:"";position:absolute;inset:-8px;border:1px solid #afffa147;border-radius:50%;animation:beacon-pulse 3.5s ease-in-out infinite}
+@keyframes beacon-pulse{50%{transform:scale(1.33);opacity:.27}}
+.marker-label{position:absolute;top:50%;left:calc(100% + 7px);transform:translateY(-50%);background:#020e0cd9;border:1px solid #c5ff6b47;backdrop-filter:blur(12px);font:9px var(--mono);letter-spacing:.03em;white-space:nowrap;color:#e8f9e9;padding:8px 10px;opacity:0;visibility:hidden;transition:opacity .2s,transform .2s;box-shadow:0 8px 30px #0009;pointer-events:none}
+.marker-no{color:var(--planet-green);margin-right:7px}
+.planet-marker:hover,.planet-marker:focus-visible{z-index:10;outline:0}
+.planet-marker:hover .marker-core,.planet-marker:focus-visible .marker-core{transform:scale(1.7)}
+.planet-marker:hover .marker-label,.planet-marker:focus-visible .marker-label{opacity:1;visibility:visible;transform:translate(4px,-50%)}
+.planet-story{position:absolute;top:52%;left:5%;height:66%;width:48%;transform:translateY(-50%);pointer-events:none;z-index:7}
+.planet-story-card{position:absolute;top:50%;left:0;transform:translateY(calc(-50% + 20px));opacity:0;visibility:hidden;max-width:700px;pointer-events:none;transition:visibility .1s}
+.story-a{opacity:var(--story-a,0)}.story-b{opacity:var(--story-b,0)}.story-c{opacity:var(--story-c,0)}
+.planet-story-card{visibility:visible}
+.story-kicker{display:block;color:var(--planet-green);letter-spacing:.23em;font:10px var(--mono);margin-bottom:25px}
+.planet-story-card h2{font-size:clamp(64px,7vw,118px);letter-spacing:-.088em;line-height:.94;margin:0 0 26px;color:#f1f5e7;font-weight:800;text-shadow:0 8px 40px #0009}
+.planet-story-card h2 em{font-style:normal;color:var(--planet-green)}
+.planet-story-card p{max-width:405px;font-size:clamp(12px,1.1vw,16px);line-height:1.95;color:#c0d2c9;margin:0 0 27px}
+.story-rule{font:9px var(--mono);color:#9eddb4;letter-spacing:.13em;border-top:1px solid #acbfb15c;padding-top:16px;display:inline-block}
+.planet-discover{pointer-events:auto;background:var(--planet-green);border:1px solid var(--planet-green);padding:17px 19px;display:flex;align-items:center;gap:40px;font:10px var(--mono);font-weight:700;color:#04110b;transition:transform .3s,box-shadow .3s}
+.planet-discover:hover{transform:translateY(-4px);box-shadow:0 14px 40px #caff6637}
+.planet-telemetry{position:absolute;z-index:8;right:5%;top:29%;display:flex;flex-direction:column;gap:4px;align-items:flex-end;font:9px var(--mono);letter-spacing:.13em;color:#abc3b6;opacity:calc(1 - var(--planet-depth,0)*.9)}
+.planet-telemetry>div:first-child{display:flex;align-items:center;gap:12px}.planet-telemetry strong{font-weight:400;color:var(--planet-green)}.planet-drag-hint{font-size:8px;color:#8da99e;padding-top:8px}
+.telemetry-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--planet-green);box-shadow:0 0 14px var(--planet-green);animation:beacon-pulse 2s infinite}
+.planet-controls{position:absolute;z-index:8;right:4%;bottom:102px;display:flex;gap:10px}
+.planet-controls button{border:1px solid #8aafa454;background:#040f0eb5;color:#d6ede0;padding:12px 14px;font:9px var(--mono);letter-spacing:.06em;transition:background .2s,border-color .2s}
+.planet-controls button:hover{background:#174031;border-color:var(--planet-green)}
+.planet-down{position:absolute;z-index:8;bottom:30px;left:4%;right:4%;display:flex;justify-content:space-between;align-items:center;color:#9aaea4;font:9px var(--mono);letter-spacing:.1em}
+.down-symbol{font:31px var(--font);color:var(--planet-green);animation:scroll-bob 2s ease-in-out infinite}@keyframes scroll-bob{50%{transform:translateY(8px)}}
+.planet-index{background:#030909;padding:120px 0 0;position:relative;z-index:3;border-top:1px solid #234d435c}
+.planet-index-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:8%;padding-bottom:100px}
+.index-lead h2{font-size:clamp(52px,6vw,100px);letter-spacing:-.09em;line-height:.94;margin:21px 0}.index-lead h2 em{font-style:normal;color:var(--planet-green)}
+.index-lead p{color:#acc4b5;max-width:390px;line-height:1.9;font-size:14px}
+.planet-directory{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;align-content:start}
+.planet-directory-item{display:flex;align-items:center;text-align:left;gap:15px;min-height:70px;background:none;border:0;border-bottom:1px solid #37615458;color:#e9f3e9;font-weight:650;font-size:14px;transition:padding .3s,color .2s,background .2s}
+.planet-directory-item span:first-child{color:#b1ddaa;font:10px var(--mono);width:22px;flex-shrink:0}
+.planet-directory-item span:last-child{margin-left:auto;color:#caff66;opacity:.45}
+.planet-directory-item:hover{padding-left:10px;color:var(--planet-green);background:#274e392a}
+.index-marquee{overflow:hidden;background:#caff66;padding:16px 0;color:#061810;font:15px var(--mono);font-weight:700;white-space:nowrap;letter-spacing:.11em}
+.index-marquee span{display:block;width:max-content;animation:marquee-run 24s linear infinite}@keyframes marquee-run{to{transform:translateX(-35%)}}
+.globe-fallback .planet-canvas{background:transparent;border-radius:50%}.globe-static .planet-canvas{background:radial-gradient(circle at 34% 29%,#367a60 0%,#13666d 26%,#0a2934 57%,#031521 63%,transparent 65%)}
+/* Full-screen wetland dossier, separate from Rain Engine, keyboard dismissible */
+.wetland-portal{position:fixed;inset:0;z-index:90;background:#030a08;color:#f5f5e8;overflow-y:auto;overscroll-behavior:contain;visibility:hidden;opacity:0;transform:translateY(40px) scale(.985);pointer-events:none;transition:opacity .42s,transform .55s,visibility .55s}
+.wetland-portal.active{visibility:visible;opacity:1;transform:none;pointer-events:auto}
+.portal-hero{position:relative;min-height:700px;height:100svh;overflow:hidden;background:#0c1919}
+.portal-photo{position:absolute;inset:0;background-position:center;background-size:cover;transform:scale(1.08);transition:transform 7s cubic-bezier(.2,.7,.2,1);filter:saturate(.8) contrast(1.08)}
+.wetland-portal.active .portal-photo{transform:scale(1)}
+.portal-photo-shade{position:absolute;inset:0;background:linear-gradient(90deg,#020a0aec 0%,#020a0aa9 42%,transparent 90%),linear-gradient(0deg,#030a0cf0 0%,transparent 55%,#0207078c 100%)}
+.portal-topline{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:24px 5%;border-bottom:1px solid #c2ead159;font:10px var(--mono);letter-spacing:.16em;z-index:5;color:#d2f2e0}
+.portal-topline>span{display:flex;align-items:center;gap:10px}
+.portal-close{border:1px solid #d1e4d375;color:#f1fbef;background:#06120e55;backdrop-filter:blur(12px);font:10px var(--mono);letter-spacing:.08em;padding:12px 18px;display:flex;gap:22px;align-items:center}
+.portal-close:hover{background:#caff66;color:#0b190a}
+.portal-header{position:absolute;left:5%;right:5%;top:49%;transform:translateY(-42%);display:flex;align-items:end;justify-content:space-between;gap:22px}
+.portal-overline{color:#caff66;font:11px var(--mono);letter-spacing:.2em}
+.portal-header h2{font-size:clamp(76px,11.5vw,185px);line-height:.85;letter-spacing:-.096em;margin:24px 0 25px;font-weight:800;text-shadow:0 9px 80px #0007}
+.portal-header h2 em{font-style:normal;color:#caff66}
+.portal-header p{max-width:550px;color:#deeadd;line-height:1.9;font-size:15px;text-shadow:0 2px 12px #000b}
+.portal-coordinate{display:flex;align-items:flex-end;flex-direction:column;gap:14px;min-width:200px;margin-bottom:16px;color:#c8e5d0;font:9px var(--mono);letter-spacing:.13em}
+.portal-coordinate strong{font:18px var(--mono);color:#caff66;letter-spacing:0}
+.portal-hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}
+.portal-primary{padding:17px 23px;background:#caff66;border:1px solid #caff66;font:11px var(--mono);font-weight:700;color:#0a1607;transition:transform .2s,box-shadow .2s}
+.portal-primary:hover{transform:translateY(-3px);box-shadow:0 10px 40px #caff663b}
+.portal-minor{padding:17px 22px;background:#02161166;border:1px solid #d8ebd499;color:#f1fbef;font:11px var(--mono)}
+.portal-minor:hover{border-color:#caff66;color:#caff66}
+.portal-photo-caption{position:absolute;bottom:23px;left:5%;right:5%;display:flex;justify-content:space-between;gap:20px;font:9px var(--mono);letter-spacing:.11em;color:#b8d1c2}
+.portal-content{max-width:1380px;margin:auto;padding:0 5% 85px}
+.portal-nav-strip{position:sticky;top:0;z-index:4;background:#030a08ed;backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:space-between;gap:30px;padding:19px 0;border-bottom:1px solid #7bb29d40;font:10px var(--mono);letter-spacing:.12em;color:#9ebcad}
+.portal-nav-strip strong{color:#caff66}.portal-tabs{display:flex;gap:8px;flex-wrap:wrap}.portal-tabs button{border:1px solid transparent;background:transparent;color:#a9c3ad;font:10px var(--mono);padding:12px 15px}
+.portal-tabs button[aria-selected="true"]{border-color:#caff66;background:#caff6612;color:#caff66}
+.portal-tab-body{padding:65px 0;min-height:490px;animation:dossier-appear .5s ease both}@keyframes dossier-appear{from{opacity:.35;transform:translateY(16px)}to{opacity:1;transform:none}}
+.portal-essay-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%}
+.portal-mini-kicker{font:10px var(--mono);letter-spacing:.2em;color:#caff66}
+.portal-big-number{font-weight:800;font-size:clamp(100px,14vw,210px);letter-spacing:-.13em;line-height:1;color:#d9ffad12}
+.portal-section-title{font-size:clamp(45px,5vw,83px);line-height:.98;letter-spacing:-.075em;margin:16px 0 29px}
+.portal-essay{font-size:clamp(15px,1.3vw,19px);line-height:1.9;color:#c6d8ca}
+.portal-factgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:40px}
+.portal-fact{background:#0f221b;border:1px solid #56846e52;padding:25px;min-height:110px}
+.portal-fact small{display:block;color:#9bbcaf;font:9px var(--mono);letter-spacing:.12em;margin-bottom:15px}
+.portal-fact strong{font-size:16px;line-height:1.4;display:block}
+.portal-scenarios{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}
+.portal-scenario{border:1px solid #5c8a6d6d;background:linear-gradient(150deg,#123025,#071711);padding:30px 22px;min-height:320px}
+.portal-scenario .scenario-num{font:38px var(--mono);color:#caff66;opacity:.75}
+.portal-scenario h4{font-size:25px;letter-spacing:-.04em;margin:18px 0}
+.portal-scenario p{font-size:13px;line-height:1.8;color:#c0d6c8}
+.portal-species{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
+.portal-species-group{padding:29px;border:1px solid #55806b;background:#0d241a}
+.portal-species-group h4{font-size:22px;margin:13px 0 22px}
+.portal-chip{border:1px solid #648b75;padding:11px 14px;display:inline-block;font-size:12px;margin:0 7px 10px 0;color:#d5ead6;background:#142a20}
+.portal-bottom-bar{display:flex;justify-content:space-between;border-top:1px solid #56826c;padding-top:23px;gap:20px}
+.portal-bottom-bar button{border:0;background:none;color:#caff66;font:11px var(--mono);letter-spacing:.11em;padding:14px;transition:transform .2s}
+.portal-bottom-bar button:hover{transform:translateX(3px)}
+.portal-source{font:11px var(--mono);line-height:1.8;color:#9cb5a4;border-top:1px solid #244837;padding-top:15px;margin-top:26px}
+@media(max-width:1100px){.planet-stage{width:min(79vw,710px,68svh)}.planet-story{left:4%;width:53%}.planet-story-card h2{font-size:clamp(60px,7vw,100px)}.planet-telemetry{top:22%}.planet-index-inner{gap:5%}.portal-header h2{font-size:clamp(73px,10vw,136px)}}
+@media(max-width:880px){.planet-journey{height:245svh;min-height:1250px}.planet-sticky{min-height:610px}.planet-eyebrow{top:93px;font-size:8px}.planet-stage{width:min(95vw,590px,57svh);top:41%;left:50%}.planet-intro{top:36%;text-align:center}.planet-intro h1{font-size:clamp(65px,13vw,118px)}.planet-story{left:5%;right:5%;width:90%;top:auto;bottom:86px;height:30%;transform:none}.planet-story-card{top:auto;bottom:0;transform:none;width:100%;max-width:700px}.planet-story-card h2{font-size:clamp(46px,7vw,69px);margin:7px 0;line-height:.93}.planet-story-card p{font-size:12px;line-height:1.6;margin:9px 0;max-width:95%}.story-kicker{margin-bottom:8px;font-size:8px}.story-rule{padding-top:8px;font-size:8px}.planet-controls{right:4%;bottom:65px}.planet-telemetry{right:5%;top:18%}.planet-down{bottom:15px}.planet-down span:last-child{display:none}.planet-index-inner{grid-template-columns:1fr}.planet-directory{margin-top:15px}.portal-header{top:45%;transform:translateY(-38%);flex-direction:column;align-items:start}.portal-coordinate{align-items:start;gap:7px}.portal-essay-layout{grid-template-columns:1fr}.portal-big-number{display:none}.portal-scenarios{grid-template-columns:1fr}.portal-scenario{min-height:unset}.portal-hero{min-height:720px}}
+@media(max-width:520px){.site-header{height:73px}.planet-journey{min-height:1490px;height:290svh}.planet-sticky{min-height:590px}.planet-eyebrow{top:88px;letter-spacing:.1em;font-size:7px}.planet-record{font-size:7px}.planet-intro{top:32%}.planet-intro h1{font-size:clamp(55px,14vw,77px)}.intro-kicker,.intro-sub{font-size:7px}.planet-stage{top:40%;width:min(112vw,540px,58svh)}.planet-ambient-rings{top:41%}.planet-telemetry{top:14%;left:5%;right:auto;font-size:8px}.planet-drag-hint{display:none}.planet-story{bottom:87px;height:39%;width:90%}.planet-story-card h2{font-size:clamp(44px,10vw,60px)}.planet-story-card p{font-size:11px;max-width:96%}.planet-discover{font-size:9px;padding:12px}.planet-controls{bottom:57px;right:4%}.planet-controls button{font-size:7px;padding:9px 10px}.planet-down{font-size:7px}.planet-index{padding-top:75px}.planet-index-inner{padding-bottom:64px}.planet-directory{grid-template-columns:1fr}.planet-directory-item{min-height:54px}.index-lead h2{font-size:49px}.index-marquee{font-size:12px}.portal-hero{min-height:675px}.portal-header{top:44%;left:5%;right:5%}.portal-header h2{font-size:clamp(64px,15vw,93px);margin:18px 0}.portal-header p{font-size:12px}.portal-coordinate{font-size:8px;min-width:unset;margin:4px 0}.portal-coordinate strong{font-size:11px}.portal-overline{font-size:9px}.portal-hero-actions{margin-top:15px}.portal-primary,.portal-minor{padding:11px;font-size:8px}.portal-topline{font-size:8px;padding:16px 5%}.portal-close{font-size:8px;padding:10px;gap:5px}.portal-photo-caption{font-size:7px}.portal-photo-caption span{display:none}.portal-nav-strip{flex-direction:column;align-items:flex-start;gap:7px}.portal-tabs{gap:2px}.portal-tabs button{font-size:8px;padding:10px 8px}.portal-tab-body{padding:38px 0}.portal-section-title{font-size:47px}.portal-factgrid{grid-template-columns:1fr}.portal-species{grid-template-columns:1fr}.portal-bottom-bar button{font-size:9px;padding:10px}.planet-marker{width:28px;height:28px}.marker-label{display:none}}
+@media(prefers-reduced-motion:reduce){.planet-orbit,.planet-halo,.marker-ring,.planet-star,.down-symbol,.index-marquee span{animation:none!important}.planet-stage,.planet-ambient-rings{transition:none!important}.wetland-portal,.portal-photo{transition:none!important}}
+/* The mobile opening retains a legible title below the globe rather than hiding it behind Earth. */
+@media(max-width:520px){
+ .planet-intro{top:auto;bottom:121px;transform:none;text-align:left;left:5%;right:5%}
+ .planet-intro h1{font-size:clamp(40px,10.5vw,56px);opacity:.96;line-height:.94;margin:12px 0;color:#f3faed}
+ .planet-intro h1 em{color:#caff66;opacity:1}
+ .intro-kicker{font-size:8px;color:#caff66}
+ .intro-sub{font-size:8px;text-align:left}
+}
+@media(max-width:520px){.planet-intro h1{letter-spacing:-.065em;word-spacing:.06em}}
+@media(max-width:520px){.planet-intro h1{letter-spacing:-.055em;word-spacing:.33em}}

@@ -1,0 +1,931 @@
+{
+  "wetlands": [
+    {
+      "key": "chilika",
+      "name": "Chilika Lake",
+      "country": "India",
+      "region": "Odisha",
+      "type": "Coastal lagoon",
+      "ecosystem": "Brackish coastal wetland",
+      "description": "Chilika is Asia's largest brackish-water lagoon, on India's eastern coast. Its changing connection with the Bay of Bengal creates a salinity gradient that supports fish, Irrawaddy dolphins and huge flocks of wintering waterbirds.",
+      "plants": [
+        "Mangroves",
+        "Reeds",
+        "Seagrasses",
+        "Aquatic grasses"
+      ],
+      "animals": [
+        "Flamingos",
+        "Dolphins",
+        "Fish",
+        "Waterbirds"
+      ],
+      "climate": "Tropical monsoon",
+      "waterBehaviour": "Water levels and salinity change with monsoon rainfall, river inflow and exchange with the Bay of Bengal.",
+      "source": "Ramsar Sites Information Service; Chilika Development Authority",
+      "scenarios": [
+        {
+          "label": "Weak monsoon",
+          "emoji": "🌤️",
+          "rainfall": 25,
+          "effect": "Less freshwater reaches the lagoon, so salinity rises and freshwater-dependent plants and fish lose habitat. In the 1990s, silting of the sea mouth and changing salinity caused fish catches to collapse, and Chilika was placed on the Ramsar Montreux Record of threatened wetlands in 1993.",
+          "source": "Ramsar Convention — Chilika Lake (Montreux Record 1993, removed 2002)"
+        },
+        {
+          "label": "Normal monsoon",
+          "emoji": "🌧️",
+          "rainfall": 55,
+          "effect": "Monsoon rain and river inflow freshen the northern lagoon while the sea keeps the southern part brackish. This gradient is what lets the lagoon support fisheries, Irrawaddy dolphins and hundreds of thousands of wintering birds.",
+          "source": "Chilika Development Authority; Ramsar Sites Information Service"
+        },
+        {
+          "label": "Extreme monsoon",
+          "emoji": "⛈️",
+          "rainfall": 85,
+          "effect": "Heavy rain and river floods raise water levels, dilute the lagoon and carry extra silt. Repeated siltation is one of the long-term threats to the lagoon's depth and to its connection with the sea.",
+          "source": "Ramsar Sites Information Service — Chilika Lake"
+        }
+      ],
+      "video": {
+        "id": "JFYyUzVlgOw",
+        "title": "Chilika Diaries — a 5-minute documentary on India's largest coastal lagoon",
+        "channel": "LanceR Travels & Vlogs",
+        "length": "5:19",
+        "note": "Notice how fishing, birds and the sea mouth all depend on the same water."
+      }
+    },
+    {
+      "key": "sundarbans",
+      "name": "Sundarban Wetland",
+      "country": "India",
+      "region": "West Bengal",
+      "type": "Mangrove wetland",
+      "ecosystem": "Tidal mangrove forest",
+      "description": "The Sundarbans is the world's largest contiguous mangrove forest, formed around the Ganges-Brahmaputra-Meghna delta and shared by India and Bangladesh. Tides, freshwater inflow and sediment movement strongly influence its ecology.",
+      "plants": [
+        "Sundari mangrove",
+        "Avicennia",
+        "Nypa palm",
+        "Salt-tolerant grasses"
+      ],
+      "animals": [
+        "Fishing cats",
+        "Waterbirds",
+        "Fish",
+        "Estuarine crocodiles"
+      ],
+      "climate": "Tropical monsoon",
+      "waterBehaviour": "Tidal water moves through channels and creeks twice a day while river water and monsoon rainfall modify salinity.",
+      "source": "Ramsar Sites Information Service; UNESCO World Heritage Centre",
+      "scenarios": [
+        {
+          "label": "Drier year",
+          "emoji": "🌤️",
+          "rainfall": 25,
+          "effect": "Reduced freshwater flow lets saline tidal water push further inland. Rising salinity is linked to 'top-dying' disease of the Sundari tree, the species the forest is named after.",
+          "source": "Ramsar Sites Information Service; IUCN mangrove assessments"
+        },
+        {
+          "label": "Normal monsoon",
+          "emoji": "🌧️",
+          "rainfall": 55,
+          "effect": "Freshwater from rivers and monsoon rain mixes with the tides. The mangroves trap sediment and act as a living buffer that reduces the force of cyclones and storm surges on coastal villages.",
+          "source": "UNESCO World Heritage Centre — Sundarbans"
+        },
+        {
+          "label": "Cyclone & extreme rain",
+          "emoji": "🌀",
+          "rainfall": 85,
+          "effect": "Storm surges and intense rainfall, as during Cyclone Amphan in May 2020, flood low islands with saltwater, damage mangroves and ruin crops and freshwater ponds that people depend on.",
+          "source": "India Meteorological Department — Cyclone Amphan (2020)"
+        }
+      ],
+      "video": {
+        "id": "8WN4HvtnhGc",
+        "title": "The Sundarbans: A Forest Between River and Ocean",
+        "channel": "SLICE Wild",
+        "length": "15:06",
+        "note": "Watch how tides and river water shape where the mangroves grow."
+      }
+    },
+    {
+      "key": "tsokar",
+      "name": "Tso Kar Wetland Complex",
+      "country": "India",
+      "region": "Ladakh",
+      "type": "High-altitude lake system",
+      "ecosystem": "Cold desert wetland",
+      "description": "Tso Kar is a high-altitude wetland complex in Ladakh, made up of the freshwater Startsapuk Tso and the saline Tso Kar. Its cold, dry environment produces an ecosystem very different from India's tropical wetlands.",
+      "plants": [
+        "Salt-tolerant vegetation",
+        "Alpine grasses",
+        "Marsh plants"
+      ],
+      "animals": [
+        "Black-necked cranes",
+        "Wild asses",
+        "Waterbirds",
+        "Migratory birds"
+      ],
+      "climate": "High-altitude cold desert",
+      "waterBehaviour": "Snowmelt from surrounding mountains and sparse precipitation feed the shallow marshes.",
+      "source": "Ramsar Sites Information Service (designated 2020)",
+      "scenarios": [
+        {
+          "label": "Low snow year",
+          "emoji": "🏔️",
+          "rainfall": 15,
+          "effect": "Tso Kar receives very little rain; it depends on snowmelt. In a low-snow year the shallow marshes shrink and the nesting areas used by black-necked cranes contract.",
+          "source": "Ramsar Sites Information Service — Tso Kar Wetland Complex"
+        },
+        {
+          "label": "Normal meltwater",
+          "emoji": "💧",
+          "rainfall": 35,
+          "effect": "Summer meltwater feeds the two lakes and the marshes between them. The complex is one of the very few breeding grounds of the black-necked crane in India.",
+          "source": "Ramsar Sites Information Service; Wildlife Institute of India"
+        },
+        {
+          "label": "Wetter year",
+          "emoji": "🌧️",
+          "rainfall": 60,
+          "effect": "More meltwater or rain deepens the marshes and expands feeding areas for migratory waterbirds that stop here on the Central Asian Flyway.",
+          "source": "Ramsar Sites Information Service — Tso Kar Wetland Complex"
+        }
+      ],
+      "video": {
+        "id": "__l5N06Use4",
+        "title": "Tso Kar: The White Lake — saline lakes and Ladakh bird species",
+        "channel": "Roundglass Sustain",
+        "length": "5:05",
+        "note": "A wetland fed by snowmelt, not rain — compare it with the tropical sites."
+      }
+    },
+    {
+      "key": "everglades",
+      "name": "Everglades",
+      "country": "United States of America",
+      "region": "Florida",
+      "type": "Marsh",
+      "ecosystem": "Subtropical freshwater wetland",
+      "description": "The Everglades is a large subtropical wetland in southern Florida, often called the 'river of grass'. Slow-moving freshwater, sawgrass marshes, mangroves and coastal habitats create a highly varied ecosystem.",
+      "plants": [
+        "Sawgrass",
+        "Mangroves",
+        "Cypress",
+        "Aquatic plants"
+      ],
+      "animals": [
+        "Alligators",
+        "Herons",
+        "Manatees",
+        "Wading birds"
+      ],
+      "climate": "Subtropical",
+      "waterBehaviour": "A strong wet season followed by a dry season drives water depth and movement across the marsh.",
+      "source": "US National Park Service; Ramsar Sites Information Service",
+      "scenarios": [
+        {
+          "label": "Prolonged dry season",
+          "emoji": "☀️",
+          "rainfall": 25,
+          "effect": "If the dry season runs too long, the marsh cracks, peat soils dry out and oxidise, and the risk of damaging fires rises.",
+          "source": "US National Park Service — Everglades hydrology"
+        },
+        {
+          "label": "Normal wet–dry cycle",
+          "emoji": "🌦️",
+          "rainfall": 55,
+          "effect": "A shallow sheet of water flows slowly south. As water recedes in the dry season, fish concentrate in pools, and that is exactly when wading birds nest and feed their chicks.",
+          "source": "US National Park Service — Everglades National Park"
+        },
+        {
+          "label": "Water too high, too late",
+          "emoji": "⛈️",
+          "rainfall": 85,
+          "effect": "If water stays high into the nesting season, fish stay dispersed and wading birds may abandon nests. Canals and drainage altered this timing for decades; the Comprehensive Everglades Restoration Plan (2000) aims to restore natural flows.",
+          "source": "US Army Corps of Engineers — CERP; National Park Service"
+        }
+      ],
+      "video": {
+        "id": "stU7K1zU0r4",
+        "title": "The Everglades River of Grass",
+        "channel": "Odyssey Earth",
+        "length": "7:12",
+        "note": "Look for how slowly the water moves and why the timing of the dry season matters."
+      }
+    },
+    {
+      "key": "pantanal",
+      "name": "Pantanal",
+      "country": "Brazil",
+      "region": "Central South America",
+      "type": "Floodplain",
+      "ecosystem": "Tropical seasonal floodplain",
+      "description": "The Pantanal is one of the largest tropical wetlands on Earth, spanning Brazil, Bolivia and Paraguay. A yearly flood pulse creates a shifting mosaic of rivers, lakes, grasslands and forest patches.",
+      "plants": [
+        "Aquatic grasses",
+        "Palm species",
+        "Gallery forest",
+        "Floating plants"
+      ],
+      "animals": [
+        "Jaguars",
+        "Capybaras",
+        "Caimans",
+        "Macaws"
+      ],
+      "climate": "Tropical seasonal",
+      "waterBehaviour": "Seasonal flooding and drying create major changes in habitat availability every year.",
+      "source": "Ramsar Sites Information Service; Convention on Wetlands — Global Wetland Outlook",
+      "scenarios": [
+        {
+          "label": "Drought",
+          "emoji": "🔥",
+          "rainfall": 20,
+          "effect": "In 2020 an extreme drought cut the annual flood and fires burned roughly a quarter to a third of the entire Pantanal, killing enormous numbers of animals.",
+          "source": "NASA Earth Observatory; Brazil's INPE fire monitoring (2020)"
+        },
+        {
+          "label": "Normal flood pulse",
+          "emoji": "🌊",
+          "rainfall": 55,
+          "effect": "Each year a slow flood spreads across the plain and then recedes. This rhythm feeds fish, caimans and capybaras and supports one of the highest densities of jaguars anywhere.",
+          "source": "WWF — Pantanal; Ramsar Sites Information Service"
+        },
+        {
+          "label": "Exceptional flood",
+          "emoji": "⛈️",
+          "rainfall": 85,
+          "effect": "Very large floods cover more land for longer. Land animals crowd onto higher ground, while fish and waterbirds gain breeding habitat.",
+          "source": "Convention on Wetlands — Global Wetland Outlook"
+        }
+      ],
+      "video": {
+        "id": "DpnnvNj7DAA",
+        "title": "Brazil fires threaten the world's largest wetland",
+        "channel": "Reuters",
+        "length": "1:46",
+        "note": "The 2020 drought: what happens when the flood pulse fails."
+      }
+    },
+    {
+      "key": "okavango",
+      "name": "Okavango Delta",
+      "country": "Botswana",
+      "region": "Southern Africa",
+      "type": "Inland delta",
+      "ecosystem": "Seasonally flooded freshwater delta",
+      "description": "The Okavango is an inland delta in the Kalahari where seasonal floodwaters spread across channels, lagoons and floodplains and then mostly evaporate instead of reaching the sea.",
+      "plants": [
+        "Papyrus",
+        "Reeds",
+        "Water lilies",
+        "Floodplain grasses"
+      ],
+      "animals": [
+        "Elephants",
+        "Hippos",
+        "Lechwe",
+        "African fish eagles"
+      ],
+      "climate": "Semi-arid seasonal",
+      "waterBehaviour": "Floodwater arriving from Angola months after the rains changes the size and distribution of aquatic habitats.",
+      "source": "Ramsar Sites Information Service; UNESCO World Heritage Centre (inscribed 2014)",
+      "scenarios": [
+        {
+          "label": "Weak rains upstream",
+          "emoji": "🌤️",
+          "rainfall": 25,
+          "effect": "The delta's water comes from rain that falls in the Angolan highlands months earlier. A weak rainy season there means a smaller flood reaches Botswana, shrinking the lagoons that animals depend on in the dry season.",
+          "source": "UNESCO World Heritage Centre — Okavango Delta"
+        },
+        {
+          "label": "Normal flood",
+          "emoji": "🌊",
+          "rainfall": 55,
+          "effect": "The flood arrives during Botswana's dry season (around June–August), creating an oasis in the desert. Almost all the water eventually evaporates or soaks into the sand.",
+          "source": "Ramsar Sites Information Service — Okavango Delta System"
+        },
+        {
+          "label": "Large flood",
+          "emoji": "⛈️",
+          "rainfall": 80,
+          "effect": "A strong flood fills distant channels and floodplains, spreading papyrus and water lilies and letting lechwe antelope and hippos spread out across the delta.",
+          "source": "Ramsar Sites Information Service — Okavango Delta System"
+        }
+      ],
+      "video": {
+        "id": "4ftMv3mcYR4",
+        "title": "Okavango Delta Explained — Africa's water miracle",
+        "channel": "Nature Wild Planet",
+        "length": "5:26",
+        "note": "The rain falls in Angola; the flood arrives in Botswana months later."
+      }
+    },
+    {
+      "key": "kakadu",
+      "name": "Kakadu Wetlands",
+      "country": "Australia",
+      "region": "Northern Territory",
+      "type": "Floodplain wetland",
+      "ecosystem": "Tropical floodplain",
+      "description": "Kakadu contains extensive floodplains, billabongs, rivers and coastal wetlands shaped by a strong wet season and dry season.",
+      "plants": [
+        "Paperbarks",
+        "Melaleuca",
+        "Sedges",
+        "Water lilies"
+      ],
+      "animals": [
+        "Magpie geese",
+        "Crocodiles",
+        "Wallabies",
+        "Waterbirds"
+      ],
+      "climate": "Tropical monsoon",
+      "waterBehaviour": "Wet-season flooding (roughly November to April) transforms large areas of the floodplain into shallow aquatic habitat.",
+      "source": "Parks Australia; Ramsar Sites Information Service",
+      "scenarios": [
+        {
+          "label": "Poor wet season",
+          "emoji": "🌤️",
+          "rainfall": 25,
+          "effect": "A weak wet season leaves billabongs small and crowded, reducing food for magpie geese and other waterbirds and concentrating animals at a few waterholes.",
+          "source": "Parks Australia — Kakadu National Park"
+        },
+        {
+          "label": "Normal wet season",
+          "emoji": "🌧️",
+          "rainfall": 55,
+          "effect": "Floods spread across the plains and fill the billabongs. As the dry season returns, birds and crocodiles gather around the shrinking waterholes.",
+          "source": "Parks Australia — Kakadu National Park"
+        },
+        {
+          "label": "Extreme wet & rising seas",
+          "emoji": "🌊",
+          "rainfall": 85,
+          "effect": "Very large floods combined with higher sea levels allow saltwater to push into freshwater floodplains, which can kill paperbark trees and change the vegetation.",
+          "source": "Parks Australia — Kakadu climate change strategy"
+        }
+      ],
+      "video": {
+        "id": "slVG0FiZzjA",
+        "title": "Kakadu by air in the wet season (4K)",
+        "channel": "OchreWolf",
+        "length": "3:22",
+        "note": "See how far the wet-season floods spread across the plains."
+      }
+    },
+    {
+      "key": "wadden",
+      "name": "Wadden Sea",
+      "country": "Netherlands",
+      "region": "North Sea coast (Netherlands, Germany, Denmark)",
+      "type": "Tidal coastal wetland",
+      "ecosystem": "Intertidal coastal ecosystem",
+      "description": "The Wadden Sea is one of the largest unbroken systems of intertidal sand and mud flats in the world. Twice a day the tide uncovers and covers the flats, which feed millions of migrating birds.",
+      "plants": [
+        "Salt-marsh plants",
+        "Seagrasses",
+        "Algae"
+      ],
+      "animals": [
+        "Seals",
+        "Shorebirds",
+        "Shellfish",
+        "Fish"
+      ],
+      "climate": "Temperate maritime",
+      "waterBehaviour": "Tides expose and cover large mudflat areas twice daily.",
+      "source": "Common Wadden Sea Secretariat; UNESCO World Heritage Centre (inscribed 2009)",
+      "scenarios": [
+        {
+          "label": "Drier year",
+          "emoji": "🌤️",
+          "rainfall": 30,
+          "effect": "Here rainfall matters less than tides. The mudflats still appear and disappear twice daily, so the ecosystem is driven mainly by the sea rather than by rain.",
+          "source": "UNESCO World Heritage Centre — Wadden Sea"
+        },
+        {
+          "label": "Normal year",
+          "emoji": "🌊",
+          "rainfall": 50,
+          "effect": "The flats feed an estimated 10 to 12 million migratory birds a year travelling along the East Atlantic Flyway between the Arctic and Africa.",
+          "source": "Common Wadden Sea Secretariat"
+        },
+        {
+          "label": "Storms & rising seas",
+          "emoji": "🌀",
+          "rainfall": 80,
+          "effect": "Storm surges and sea-level rise can drown mudflats faster than sediment builds them up, squeezing feeding grounds between the sea and the dikes.",
+          "source": "Common Wadden Sea Secretariat — climate change reports"
+        }
+      ],
+      "video": {
+        "id": "cS4bwCujTSo",
+        "title": "Wadden Sea World Heritage Site — a unique experience",
+        "channel": "Wadden Sea World Heritage",
+        "length": "4:25",
+        "note": "A wetland run by tides: the flats appear and vanish twice a day."
+      }
+    },
+    {
+      "key": "danube",
+      "name": "Danube Delta",
+      "country": "Romania",
+      "region": "Danube Delta",
+      "type": "River delta",
+      "ecosystem": "Temperate freshwater delta",
+      "description": "Where the Danube meets the Black Sea it forms a delta of channels, lakes, reedbeds and marshes shaped by river sediment and water flow.",
+      "plants": [
+        "Reeds",
+        "Willows",
+        "Water lilies",
+        "Aquatic plants"
+      ],
+      "animals": [
+        "Pelicans",
+        "Cormorants",
+        "Sturgeon",
+        "Otters"
+      ],
+      "climate": "Temperate continental",
+      "waterBehaviour": "River discharge, fed by rain and snowmelt across central Europe, changes water flow through channels and lakes.",
+      "source": "Ramsar Sites Information Service; UNESCO World Heritage Centre (inscribed 1991)",
+      "scenarios": [
+        {
+          "label": "Low river flow",
+          "emoji": "🌤️",
+          "rainfall": 25,
+          "effect": "Low snowmelt and rain across the Danube basin reduce spring floods. Lakes become cut off from the channels and reedbeds dry, affecting fish spawning.",
+          "source": "Danube Delta Biosphere Reserve Authority; Ramsar"
+        },
+        {
+          "label": "Normal spring flood",
+          "emoji": "🌊",
+          "rainfall": 55,
+          "effect": "Spring floods flush the channels and lakes. The delta holds Europe's largest reedbeds and the continent's biggest breeding colonies of pelicans.",
+          "source": "UNESCO World Heritage Centre — Danube Delta"
+        },
+        {
+          "label": "Major flood",
+          "emoji": "⛈️",
+          "rainfall": 85,
+          "effect": "Very high river levels, as in 2006 and 2010, flood farmland and villages but also reconnect floodplain lakes and spread fresh sediment through the delta.",
+          "source": "International Commission for the Protection of the Danube River"
+        }
+      ],
+      "video": {
+        "id": "CNlVhQ29nzs",
+        "title": "Danube Delta's unique habitat under threat, say experts",
+        "channel": "Euronews Next",
+        "length": "2:09",
+        "note": "How changes in river flow reach the reedbeds and pelican colonies."
+      }
+    },
+    {
+      "key": "kushiro",
+      "name": "Kushiro Mire",
+      "country": "Japan",
+      "region": "Hokkaido",
+      "type": "Marsh",
+      "ecosystem": "Temperate peat and marsh ecosystem",
+      "description": "Kushiro Mire is Japan's largest marsh and was the country's first Ramsar Site (1980). Its peat and reedbeds support the red-crowned crane.",
+      "plants": [
+        "Sedges",
+        "Reeds",
+        "Marsh grasses"
+      ],
+      "animals": [
+        "Red-crowned cranes",
+        "Waterbirds",
+        "Fish",
+        "Amphibians"
+      ],
+      "climate": "Cool temperate",
+      "waterBehaviour": "Water levels respond to rainfall, snowmelt and river flow; the peat stores water like a sponge.",
+      "source": "Japan Ministry of the Environment; Ramsar Sites Information Service",
+      "scenarios": [
+        {
+          "label": "Dry year",
+          "emoji": "🌤️",
+          "rainfall": 30,
+          "effect": "Lower rainfall and snowmelt dry the peat and marsh edges, allowing alder trees to spread into open marsh — a change already observed as parts of the mire dry out.",
+          "source": "Japan Ministry of the Environment — Kushiro Shitsugen"
+        },
+        {
+          "label": "Normal year",
+          "emoji": "🌧️",
+          "rainfall": 50,
+          "effect": "The marsh provides year-round habitat for red-crowned cranes. Hokkaido's crane population recovered from a few dozen birds in the 1920s to well over a thousand today.",
+          "source": "Japan Ministry of the Environment; Kushiro International Wetland Centre"
+        },
+        {
+          "label": "Heavy rain",
+          "emoji": "⛈️",
+          "rainfall": 80,
+          "effect": "Heavy rain fills the marsh, which then slows the flow of water downstream towards Kushiro city — a direct example of a wetland's flood-regulation service.",
+          "source": "Ramsar Sites Information Service — Kushiro-shitsugen"
+        }
+      ],
+      "video": {
+        "id": "cEHu1D0jtWg",
+        "title": "Japan's Red-crowned Crane — the Kushiro Wetlands",
+        "channel": "Japan Video Topics",
+        "length": "4:28",
+        "note": "A conservation success story that depends on keeping the marsh wet."
+      }
+    }
+  ],
+  "learnModules": [
+    {
+      "id": "what",
+      "title": "What Is A Wetland?",
+      "subtitle": "The foundation",
+      "emoji": "🌊",
+      "sections": [
+        {
+          "heading": "Definition",
+          "text": "A wetland is an area where water is the major environmental factor controlling the soil, vegetation and associated animal life. Wetlands can be permanent or seasonal and can occur inland or along coasts."
+        },
+        {
+          "heading": "Major types",
+          "text": "Wetlands include marshes, swamps, lakes, rivers, floodplains, peatlands, mangroves, estuaries, lagoons, tidal flats and several human-made environments. Their appearance can therefore be completely different from one region to another."
+        },
+        {
+          "heading": "Why they matter",
+          "text": "Wetlands provide habitat, help regulate water, retain sediments and nutrients, support biodiversity and contribute to human livelihoods. Their exact functions depend on the particular wetland."
+        }
+      ],
+      "sources": [
+        "Convention on Wetlands (Ramsar) — The Importance of Wetlands",
+        "NOAA Ocean Service — What is a Wetland?"
+      ],
+      "videos": [
+        {
+          "id": "Lg0hcVq2zM0",
+          "title": "Wetlands explained in 5 minutes",
+          "channel": "Clear Creek Solutions",
+          "length": "5:11",
+          "note": "The clearest short overview of what counts as a wetland."
+        },
+        {
+          "id": "GOz1mD3LOiU",
+          "title": "Wetlands: Marshes, Swamps and Everglades",
+          "channel": "Next Generation Science",
+          "length": "4:42",
+          "note": "Compare the three wetland types shown."
+        }
+      ]
+    },
+    {
+      "id": "rain",
+      "title": "Rainfall & The Water Cycle",
+      "subtitle": "Where the water comes from",
+      "emoji": "🌧️",
+      "sections": [
+        {
+          "heading": "The hydrological cycle",
+          "text": "Water continuously moves between the atmosphere, land, oceans and living systems. Evaporation, condensation, precipitation, infiltration, runoff and groundwater movement are connected processes within this cycle."
+        },
+        {
+          "heading": "Rainfall is not the whole story",
+          "text": "A wetland's water balance can also depend on rivers, groundwater, tides, snowmelt, evaporation and human water management. This is why two wetlands receiving similar rainfall can behave very differently."
+        },
+        {
+          "heading": "Changing rainfall",
+          "text": "Changes in the timing, intensity or seasonal distribution of rainfall can alter water depth and the duration of flooding. These changes can affect vegetation, aquatic organisms, food availability and habitat conditions."
+        }
+      ],
+      "sources": [
+        "NCERT — Fundamentals of Physical Geography, Water / Hydrological Cycle",
+        "Convention on Wetlands — Global Wetland Outlook"
+      ],
+      "videos": [
+        {
+          "id": "oaDkph9yQBs",
+          "title": "NASA | Earth's Water Cycle",
+          "channel": "NASA Goddard",
+          "length": "5:53",
+          "note": "Follow one drop of water around the whole cycle."
+        },
+        {
+          "id": "al-do-HGuIk",
+          "title": "Water Cycle — how the hydrologic cycle works",
+          "channel": "National Science Foundation",
+          "length": "6:47",
+          "note": "Note infiltration and groundwater — the hidden half of the cycle."
+        }
+      ]
+    },
+    {
+      "id": "biodiversity",
+      "title": "Wetland Biodiversity",
+      "subtitle": "Life in water and mud",
+      "emoji": "🦩",
+      "sections": [
+        {
+          "heading": "A biodiversity hotspot",
+          "text": "Wetlands support diverse communities of plants, fish, amphibians, reptiles, mammals, insects and birds. Migratory birds may use wetlands as feeding, resting or breeding areas."
+        },
+        {
+          "heading": "Why species differ",
+          "text": "There is no universal wetland species list. Temperature, salinity, water depth, soil, vegetation, altitude and geography all influence which organisms can survive in a particular wetland."
+        },
+        {
+          "heading": "Food webs",
+          "text": "Wetland food webs can connect aquatic plants, algae, insects, fish, amphibians, reptiles, birds and mammals. Changes to one part of the system can therefore influence other organisms."
+        }
+      ],
+      "sources": [
+        "Convention on Wetlands — Wetlands and Biodiversity",
+        "NOAA Ocean Service — What is a Wetland?"
+      ],
+      "videos": [
+        {
+          "id": "xIJb9BRsLvg",
+          "title": "Interactions in Ecosystems — Wetlands",
+          "channel": "Next Generation Science",
+          "length": "3:25",
+          "note": "Who eats whom in a marsh."
+        },
+        {
+          "id": "-oVavgmveyY",
+          "title": "Food Webs and Energy Pyramids",
+          "channel": "Amoeba Sisters",
+          "length": "5:49",
+          "note": "Why removing one species shakes the whole web."
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "title": "What Wetlands Do For Us",
+      "subtitle": "Ecosystem services",
+      "emoji": "🌱",
+      "sections": [
+        {
+          "heading": "Flood regulation",
+          "text": "Wetlands can absorb and slow excess water during periods of heavy rainfall or flooding. The amount of protection depends on the wetland's structure, location and condition."
+        },
+        {
+          "heading": "Water quality",
+          "text": "Wetland vegetation, soils and sediments can retain nutrients and sediments and help remove some pollutants from water."
+        },
+        {
+          "heading": "Climate connections",
+          "text": "Different wetland types store and exchange carbon differently. Peatlands, mangroves and other wetland ecosystems are important components of the global carbon cycle."
+        }
+      ],
+      "sources": [
+        "Convention on Wetlands — Wetland Ecosystem Services",
+        "Global Wetland Outlook 2025"
+      ],
+      "videos": [
+        {
+          "id": "QyA5PBqSdfc",
+          "title": "How Wetlands Manage Water",
+          "channel": "Wisconsin Wetlands Association",
+          "length": "3:39",
+          "note": "Wetlands as sponges: storing floods, releasing slowly."
+        },
+        {
+          "id": "OKggI7WkRp4",
+          "title": "How Wetlands Work",
+          "channel": "Ohio Department of Natural Resources",
+          "length": "1:21",
+          "note": "Filtering water in under two minutes."
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "title": "Wetlands & Geography",
+      "subtitle": "Why location changes everything",
+      "emoji": "🌍",
+      "sections": [
+        {
+          "heading": "Latitude",
+          "text": "Latitude affects temperature, sunlight and seasonal patterns. Tropical, temperate, polar and high-altitude wetlands therefore experience different environmental conditions."
+        },
+        {
+          "heading": "Relief and drainage",
+          "text": "Low-lying basins can collect water, while mountains can influence precipitation and runoff. River valleys and deltas can form extensive wetland systems."
+        },
+        {
+          "heading": "Coasts",
+          "text": "Coastal wetlands are influenced by tides, waves, salinity and sediment movement. Mangroves, salt marshes, estuaries and tidal flats are examples."
+        }
+      ],
+      "sources": [
+        "NOAA Ocean Service — Wetland Types",
+        "Convention on Wetlands — The Importance of Wetlands",
+        "NCERT Geography textbooks"
+      ],
+      "videos": [
+        {
+          "id": "nFg6N7Le6A8",
+          "title": "The Okavango Delta explained",
+          "channel": "FactSpark",
+          "length": "6:36",
+          "note": "A delta in a desert — geography decides everything."
+        },
+        {
+          "id": "m27uXGbdzvs",
+          "title": "Wadden Sea in 60 seconds",
+          "channel": "DW News",
+          "length": "1:06",
+          "note": "A coastal wetland shaped by tides, not rain."
+        }
+      ]
+    },
+    {
+      "id": "change",
+      "title": "When Rainfall Changes",
+      "subtitle": "The central AQUA question",
+      "emoji": "⚡",
+      "sections": [
+        {
+          "heading": "Too little water",
+          "text": "Reduced rainfall can lower water levels and shorten the duration of flooding. Some aquatic habitats may become smaller or temporarily disappear. The Pantanal drought and fires of 2020 are a recent example."
+        },
+        {
+          "heading": "Too much water",
+          "text": "Very intense rainfall can rapidly increase water levels and runoff. The ecological effect depends on the wetland, its drainage and the timing of the event."
+        },
+        {
+          "heading": "Timing matters",
+          "text": "A change in seasonal timing can matter even when the total annual rainfall does not change greatly. Organisms often depend on seasonal water availability for feeding, migration and reproduction — Everglades wading birds, for example, nest when falling water concentrates fish."
+        }
+      ],
+      "sources": [
+        "Convention on Wetlands — Global Wetland Outlook",
+        "NCERT — Hydrological Cycle",
+        "US National Park Service — Everglades"
+      ],
+      "videos": [
+        {
+          "id": "DpnnvNj7DAA",
+          "title": "Brazil fires threaten the world's largest wetland",
+          "channel": "Reuters",
+          "length": "1:46",
+          "note": "The Pantanal, 2020: too little water."
+        },
+        {
+          "id": "lJZBM1epkzk",
+          "title": "How a lazy river of grass became the Everglades",
+          "channel": "Smithsonian Channel",
+          "length": "1:10",
+          "note": "Why the Everglades depends on seasonal flow."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "question": "Which process is part of the hydrological cycle?",
+      "options": [
+        "Evaporation",
+        "Photosynthesis only",
+        "Rock formation",
+        "Volcanism"
+      ],
+      "answer": 0,
+      "explanation": "Evaporation transfers water from surfaces into the atmosphere.",
+      "module": "Rainfall & The Water Cycle"
+    },
+    {
+      "question": "Which factor can strongly influence the species found in a wetland?",
+      "options": [
+        "Water chemistry",
+        "Only the name of the wetland",
+        "Only longitude",
+        "None of these"
+      ],
+      "answer": 0,
+      "explanation": "Water chemistry, climate, soil, vegetation and geography all influence wetland communities.",
+      "module": "Wetland Biodiversity"
+    },
+    {
+      "question": "Which of these is a type of wetland?",
+      "options": [
+        "Marsh",
+        "Desert dune",
+        "Volcano",
+        "Glacier"
+      ],
+      "answer": 0,
+      "explanation": "Marshes are one of the major wetland types.",
+      "module": "What Is A Wetland?"
+    },
+    {
+      "question": "What can wetlands help regulate?",
+      "options": [
+        "Flood water",
+        "The Earth's rotation",
+        "The Moon's orbit",
+        "Gravity"
+      ],
+      "answer": 0,
+      "explanation": "Wetlands can absorb and slow excess water during some flooding events.",
+      "module": "What Wetlands Do For Us"
+    },
+    {
+      "question": "Why aren't all wetlands home to the same animals?",
+      "options": [
+        "Conditions differ between wetlands",
+        "Animals choose random countries",
+        "All wetlands are identical",
+        "Rainfall has no effect"
+      ],
+      "answer": 0,
+      "explanation": "Climate, salinity, water depth, soil, vegetation and geography vary from wetland to wetland.",
+      "module": "Wetland Biodiversity"
+    },
+    {
+      "question": "Which process moves water from clouds to Earth's surface?",
+      "options": [
+        "Precipitation",
+        "Condensation only",
+        "Erosion",
+        "Photosynthesis"
+      ],
+      "answer": 0,
+      "explanation": "Precipitation includes rain, snow and other forms of water falling from the atmosphere.",
+      "module": "Rainfall & The Water Cycle"
+    },
+    {
+      "question": "Which wetland is driven mainly by tides rather than rainfall?",
+      "options": [
+        "Wadden Sea",
+        "Tso Kar",
+        "Pantanal",
+        "Kushiro Mire"
+      ],
+      "answer": 0,
+      "explanation": "The Wadden Sea is a large intertidal coastal wetland.",
+      "module": "Wetlands & Geography"
+    },
+    {
+      "question": "What is one reason wetland vegetation is important?",
+      "options": [
+        "It provides habitat and interacts with water and sediments",
+        "It stops all rainfall",
+        "It controls Earth's orbit",
+        "It creates gravity"
+      ],
+      "answer": 0,
+      "explanation": "Vegetation contributes to habitat structure and interacts with water, nutrients and sediments.",
+      "module": "What Wetlands Do For Us"
+    },
+    {
+      "question": "On which continent is the Pantanal?",
+      "options": [
+        "South America",
+        "Antarctica",
+        "Africa",
+        "Europe"
+      ],
+      "answer": 0,
+      "explanation": "The Pantanal is a major tropical wetland region in South America.",
+      "module": "Wetlands & Geography"
+    },
+    {
+      "question": "Why can the timing of rainfall matter, not just the total amount?",
+      "options": [
+        "Species may depend on seasonal water availability",
+        "Rainfall timing never matters",
+        "It changes Earth's axis",
+        "It changes the length of a year"
+      ],
+      "answer": 0,
+      "explanation": "Seasonal water availability can affect feeding, migration, breeding and habitat conditions.",
+      "module": "When Rainfall Changes"
+    },
+    {
+      "question": "What happened in the Pantanal during the extreme drought of 2020?",
+      "options": [
+        "Fires burned roughly a quarter to a third of the wetland",
+        "It froze over completely",
+        "It became a saltwater sea",
+        "Nothing changed"
+      ],
+      "answer": 0,
+      "explanation": "The 2020 drought reduced the annual flood and allowed record fires to spread across the Pantanal.",
+      "module": "When Rainfall Changes"
+    },
+    {
+      "question": "Why was Chilika Lake placed on the Ramsar Montreux Record in 1993?",
+      "options": [
+        "Silting and salinity changes had damaged its fisheries",
+        "It had too many flamingos",
+        "It was renamed",
+        "It moved to another state"
+      ],
+      "answer": 0,
+      "explanation": "Silting of the sea mouth and changing salinity caused fish catches to fall; after restoration work it was removed from the Record in 2002.",
+      "module": "When Rainfall Changes"
+    }
+  ]
+}

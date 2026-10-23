@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AQUA · Wetland weather simulator</title>
+  <link rel="stylesheet" href="simulator.css">
+</head>
+<body>
+  <canvas id="scene" aria-label="The chosen wetland, responding to the weather"></canvas>
+  <canvas id="life" aria-hidden="true"></canvas>
+
+  <header class="brand">
+    <a href="../index.html" class="back" title="Back to AQUA">← AQUA / AFTER THE RAIN</a>
+    <h1 id="title"><span id="site-name">Wetland</span></h1>
+    <p id="site-meta" class="meta"></p>
+    <p id="status">Clear sky</p>
+    <p class="hint">MOVE THE MOUSE TO LOOK AROUND · ← → SWITCH WETLAND · 1–7 WEATHER</p>
+  </header>
+
+  <nav class="sites" id="sites" aria-label="Choose a wetland"></nav>
+
+  <aside class="lifepanel" id="lifepanel" aria-label="Flora and fauna of this wetland">
+    <h2>FLORA</h2><ul id="flora"></ul>
+    <h2>FAUNA</h2><ul id="fauna"></ul>
+  </aside>
+
+  <aside class="readout" id="readout" aria-live="polite">
+    <div><span>01 / WATER LEVEL</span><b id="r-water">50%</b><i><u id="b-water"></u></i></div>
+    <div><span>02 / HABITAT</span><b id="r-hab">100%</b><i><u id="b-hab"></u></i></div>
+    <div><span>03 / VEGETATION</span><b id="r-veg">100%</b><i><u id="b-veg"></u></i></div>
+    <div><span>04 / VISIBILITY</span><b id="r-vis">100%</b><i><u id="b-vis"></u></i></div>
+    <div><span>05 / RAIN TODAY</span><b id="r-rain">0 mm</b><i><u id="b-rain"></u></i></div>
+  </aside>
+
+  <nav class="dock" id="dock" aria-label="Weather controls">
+    <div class="modes" id="modes">
+      <button data-mode="clear"   title="Key 1">☀️<span>Clear</span></button>
+      <button data-mode="haze"    title="Key 2">🌫️<span>Haze</span></button>
+      <button data-mode="rain"    title="Key 3">🌧️<span>Rain</span></button>
+      <button data-mode="storm"   title="Key 4">⛈️<span>Storm</span></button>
+      <button data-mode="snow"    title="Key 5">❄️<span>Snow</span></button>
+      <button data-mode="drought" title="Key 6">🏜️<span>Drought</span></button>
+      <button data-mode="flood"   title="Key 7">🌊<span>Flood</span></button>
+    </div>
+    <div class="sliders">
+      <label>INTENSITY <input type="range" id="intensity" min="0" max="100" value="60"><output id="o-int">60%</output></label>
+      <label>WIND <input type="range" id="wind" min="0" max="100" value="30"><output id="o-wind">30%</output></label>
+      <label>TIME OF DAY <input type="range" id="hour" min="0" max="24" step="0.25" value="14"><output id="o-hour">14:00</output></label>
+    </div>
+    <div class="actions">
+      <button id="auto" class="pill" aria-pressed="false">▶ AUTO CYCLE</button>
+      <button id="reset" class="pill">↶ RESET</button>
+      <button id="history" class="pill accent">🛰 HISTORICAL IMAGERY ↗</button>
+      <button id="full" class="pill" title="Key F">⤢ FULLSCREEN</button>
+      <button id="hide" class="pill" title="Key H">HIDE CONTROLS</button>
+    </div>
+  </nav>
+  <button id="show" class="show" hidden>SHOW CONTROLS</button>
+
+  <section class="panel" id="panel" hidden aria-label="Historical satellite imagery">
+    <header>
+      <span class="micro-tag">✳ 06 / THE RECORD</span>
+      <h2>THE SAME WETLAND,<br>YEARS APART.</h2>
+      <p>Real NASA MODIS images of the chosen wetland, any day from 2000 to today. Drag the handle to compare two years.</p>
+      <button id="close" class="icon" aria-label="Close">✕</button>
+    </header>
+    <div class="controls">
+      <label>WETLAND <select id="site"></select></label>
+      <label>MONTH <select id="month"></select></label>
+      <label>ZOOM <select id="zoom"><option value="7">Region</option><option value="8" selected>Wetland</option><option value="9">Close</option></select></label>
+      <label class="year">YEAR A <input type="range" id="yearA" min="2001" max="2026" value="2003"><output id="o-yearA">2003</output></label>
+      <label class="year">YEAR B <input type="range" id="yearB" min="2001" max="2026" value="2025"><output id="o-yearB">2025</output></label>
+      <button id="load" class="pill accent">LOAD IMAGES ↗</button>
+    </div>
+    <div class="compare" id="compare">
+      <canvas id="imgA"></canvas>
+      <div class="clip" id="clip"><canvas id="imgB"></canvas></div>
+      <div class="handle" id="handle"><span></span></div>
+      <div class="tagA" id="tagA"></div><div class="tagB" id="tagB"></div>
+      <p class="loading" id="loading" hidden>LOADING SATELLITE TILES…</p>
+    </div>
+    <p class="credit">Imagery: NASA Global Imagery Browse Services (GIBS), MODIS Terra corrected-reflectance true colour, ~250 m per pixel. Clouds and haze are part of the real image for that day; try a different month if the view is cloudy. Site coordinates are approximate centres.</p>
+  </section>
+
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+  <script type="module" src="simulator.js"></script>
+</body>
+</html>

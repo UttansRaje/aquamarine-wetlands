@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AQUA · Animated lessons</title>
+  <meta name="description" content="Four animated lessons on rainfall, wetlands, floods, drought and carbon — part of AQUA / After the Rain.">
+  <link rel="stylesheet" href="lessons.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="AQUA home"><span class="brand-mark">A<span class="brand-dot">•</span></span><span class="brand-words">AQUA <small>AFTER THE RAIN</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="../index.html#atlas">THE ATLAS</a><a href="../index.html#lab">THE LAB</a><a href="../index.html#compare">COMPARE</a><a href="../index.html#learn">FIELD NOTES</a><a href="./" class="active">LESSONS</a><a href="../simulator/">SIMULATOR</a></nav>
+  </header>
+  <header class="top">
+    <span class="micro-tag">✳ 05 / MOTION PICTURES · NARRATED</span>
+    <h1>FOUR SHORT<br><em>FILMS.</em></h1>
+    <p class="lede">Drawn live in your browser, frame by frame, with a narrator teaching each lesson. Press space to pause, use the arrow keys to skip between scenes, and 🔊 to mute the voice.</p>
+  </header>
+
+  <main>
+    <nav class="picker" id="picker" aria-label="Choose a lesson"></nav>
+
+    <section class="stage" id="stage">
+      <canvas id="screen" aria-label="Lesson animation"></canvas>
+      <button class="bigplay" id="bigplay" aria-label="Play lesson">
+        <svg viewBox="0 0 24 24" width="64" height="64" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+      </button>
+      <div class="hud">
+        <button id="play" class="icon" aria-label="Play or pause">
+          <svg class="ic-play" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+          <svg class="ic-pause" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" fill="currentColor"/></svg>
+        </button>
+        <div class="timeline" id="timeline" role="slider" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+          <div class="track"><div class="fill" id="fill"></div><div class="markers" id="markers"></div></div>
+        </div>
+        <span class="clock" id="clock">0:00 / 0:00</span>
+        <button id="prev" class="icon" aria-label="Previous scene">‹</button>
+        <button id="next" class="icon" aria-label="Next scene">›</button>
+        <button id="mute" class="icon" aria-label="Narration on or off" aria-pressed="false">🔊</button>
+        <button id="full" class="icon" aria-label="Fullscreen">⤢</button>
+      </div>
+    </section>
+
+    <section class="below">
+      <div class="scenes">
+        <h2 id="lesson-title"></h2>
+        <p id="lesson-summary" class="summary"></p>
+        <ol id="scene-list" class="scene-list"></ol>
+      </div>
+      <div class="transcript">
+        <h2>TRANSCRIPT</h2>
+        <ol id="transcript"></ol>
+        <p class="note">These animations are classroom illustrations of how wetlands respond to rainfall. They are not measurements or forecasts. Sources for the figures quoted are listed in the AQUA report.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="engine.js"></script>
+  <script src="modules-a.js"></script>
+  <script src="modules-b.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>
